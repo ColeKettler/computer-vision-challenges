@@ -5,7 +5,7 @@ fprintf ('bulid model time = %f sec\n', cputime-t);
 
 % 2.  test each image
 % (1) load GT
-gt = csvread ('sample/unknown/gt.csv');
+gt = csvread ('unknown/gt.csv');
 
 % (2) test on unknown images
 pt = 0;
@@ -13,7 +13,7 @@ pt = 0;
 t = cputime;
 
 for i = 1:35
-    fn = sprintf('sample/unknown/%d.gif', i);
+    fn = sprintf('unknown/%d.gif', i);
     f = imread(fn);
 
     alg_id = who_am_i(model, f);
