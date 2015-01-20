@@ -9,3 +9,6 @@
 
 # Simulink Code Generation
 slprj/
+
+# Octave workspace
+octave-workspace
